@@ -1,0 +1,315 @@
+USERS : 
+> db.users.insertMany([
+{
+     
+        "user_id" : 12,
+        "user_name" : "Sai Bhavya",
+        "m_id" : 22
+},
+{
+
+        "user_id" : 120,
+        "user_name" : "Rohith",
+        "m_id" : 23
+},
+{
+       
+        "user_id" : 136,
+        "user_name" : "Aishwarya",
+        "m_id" : 24
+},
+{
+      
+        "user_id" : 148,
+        "user_name" : "Kolipaka Preethi",
+        "m_id" : 22
+},
+{
+    
+        "user_id" : 137,
+        "user_name" : "Srenitha",
+        "m_id" : 22
+},
+{
+
+        "user_id" : 142,
+        "user_name" : "Sudheshna",
+        "m_id" : 23
+},
+{
+
+        "user_id" : 157,
+        "user_name" : "Srinidhi",
+        "m_id" : 22
+}]);
+
+MENTORS:
+
+> db.mentors..insertMany([
+{
+        
+        "m_id" : 22,
+        "m_name" : "Rajavasanthan"
+}
+{
+      
+        "m_id" : 23,
+        "m_name" : "venkat"
+}
+{
+     
+        "m_id" : 24,
+        "m_name" : "charles"
+}])
+
+CODEKATA:
+
+
+> db.codekata.insertMany([{
+        "codekata_id" : 1221,
+        "user_id" : 142,
+        "no_problems" : 15
+}
+,
+{
+        "codekata_id" : 1222,
+        "user_id" : 120,
+        "no_problems" : 5
+}
+,
+{
+        "codekata_id" : 1223,
+        "user_id" : 137,
+        "no_problems" : 10
+}
+,
+{
+        "codekata_id" : 1224,
+        "user_id" : 136,
+        "no_problems" : 8
+}
+,
+{
+        "codekata_id" : 1225,
+        "user_id" : 148,
+        "no_problems" : 18
+}
+,
+{
+        "codekata_id" : 1226,
+        "user_id" : 12,
+        "no_problems" : 11
+}
+])
+
+
+
+
+
+COMPANY DRIVE
+
+>db.company_drives.insertMany(
+[
+	{
+		_id:1,
+		usr_id:12,
+		company_name:["Infosys","chubb","Modak","DXC","Cognizant"],
+		date:ISODate("2021-10-16")
+	},
+	{
+		_id:2,
+		usr_id:137,
+		company_name:["tcs","wipro","infosys"],
+		date:ISODate("2021-10-21")
+	},
+	{
+		_id:3,
+		usr_id:136,
+		company_name:["Techigai","DXC"],
+		date:ISODate("2021-10-01")
+	},
+	{
+		_id:4,
+		usr_id:148,
+		company_name:["Modak","chubb"],
+		date:ISODate("2021-10-24")
+	},
+	{
+		_id:5,
+		usr_id:120,
+		company_name:["accenture","experian","DXC"],
+		date:ISODate("2021-10-25")
+	}
+];
+
+TOPIC
+
+> db.topic.insertMany([
+{ "_id" : 1, "topic_name" : "mysql", "topic_id" : 1 },
+{ "_id" : 2, "topic_name" : "mongodb", "topic_id" : 2 },
+{ "_id" : 3, "topic_name" : "mongodb", "topic_id" : 3 },
+{ "_id" : 4, "topic_name" : "nodejs", "topic_id" : 4 },
+{ "_id" : 5, "topic_name" : "js", "topic_id" : 5 }]);
+
+
+TASK
+
+> db.task.insertMany([
+{
+        "_id" : 1,
+        "usr_id" : 12,
+        "task_name" : "create collection",
+        "date" : ISODate("2021-12-03T00:00:00Z"),
+        "status" : true,
+        "task_id" : 98,
+        "topic_id" : 1
+},
+{
+        "_id" : 2,
+        "usr_id" : 136,
+        "task_name" : "updatecollection",
+        "date" : ISODate("2021-10-03T00:00:00Z"),
+        "status" : false,
+        "topic_id" : 2
+},
+{
+        "_id" : 3,
+        "usr_id" : 142,
+        "task_name" : "read collection",
+        "date" : ISODate("2021-10-20T00:00:00Z"),
+        "status" : false,
+        "topic_id" : 2
+},
+{
+        "_id" : 4,
+        "usr_id" : 148,
+        "task_name" : "delete collection",
+        "date" : ISODate("2021-10-11T00:00:00Z"),
+        "status" : false,
+        "topic_id" : 3
+},
+{
+        "_id" : 5,
+        "usr_id" : 120,
+        "task_name" : "drop collection",
+        "date" : ISODate("2021-11-10T00:00:00Z"),
+        "status" : true,
+        "topic_id" : 5
+}]);
+
+ATTENDANCE
+
+>db.attendance.insertMany(
+[
+	{
+		_id:1,
+		usr_id:142,
+		date:ISODate("2021-11-10"),
+		status:"P"
+	},
+	{
+		_id:2,
+		usr_id:148,
+		date:ISODate("2021-10-10"),
+		status:"A"
+	},
+	{
+		_id:3,
+		usr_id:136,
+		date:ISODate("2021-10-11"),
+		status:"A"
+	},
+	{
+		_id:4,
+		usr_id:120,
+		date:ISODate("2021-10-10"),
+		status:"A"
+	},
+	{
+		_id:5,
+		usr_id:12,
+		date:ISODate("2021-10-16"),
+		status:"A"
+	}
+]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+->Find all the topics and tasks which are thought in the month of October
+SOL :
+db.task.aggregate([{$lookup:{
+   from: 'topic',
+   localField: 'topic_id',
+   foreignField: 'topic_id',
+   as: 'details'
+ }},
+ {$match:{
+   "$expr":{
+     "$eq":[{"$month":"$date"},10]
+  }
+ }}]).pretty();
+
+->Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+SOL:
+> db.company_drive.find(
+  {"date":{$gte : new ISODate("2021-10-15"),
+   $lt:new ISODate("2021-10-31")}},
+   {"_id":0,"company_name":1});
+
+->Find all the company drives and students who are appeared for the placement.
+SOL : 
+> db.user.aggregate( 
+  [{$lookup: {   from: 'company_drive', 
+  localField: 'user_id',   
+  foreignField: 'usr_id',
+  as: 'string' }}]).pretty();
+
+->Find the number of problems solved by the user in codekata
+SOL:
+> db.user.aggregate
+  ([{$lookup: {  from: 'codekata', 
+  localField: 'user_id',
+  foreignField: 'user_id',
+  as: 'CodeKata Details' }}]).pretty();
+
+->Find all the mentors with who has the mentee's count more than 15
+SOL : 
+> db.users.aggregate(
+ [{$lookup: {
+   from: 'mentors',
+   localField: 'm_id',
+   foreignField: 'm_id',
+  as: 'Details'
+ }}, {$group: {
+  _id: "$m_id",
+  "count": {
+     $count: {}
+  }
+ }}, {$match: {
+  count:{$gt:15}
+ }}]);
+
+>Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+SOL :
+> db.task.aggregate(
+[{$lookup: {
+  from: 'attendance',
+  localField: 'usr_id',
+  foreignField: 'usr_id',
+  as: 'str'
+}}, {$match: {
+  status:false,
+  "str.0.status":"A",
+  "date":{$gte : new ISODate("2021-10-15"),    $lt:new ISODate("2021-10-31")}
+}}]
